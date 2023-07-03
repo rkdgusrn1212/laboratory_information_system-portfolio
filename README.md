@@ -94,26 +94,41 @@
 - 공통 개발 환경은 내가 직접 구성해서 배포하면, 팀원들이 git을 통해 배포된 작업 환경 위에서 자신의 작업물을 업데이트 하는 방식으로 개발을 진행.
 - 본인이 구성해서 배포한 내용은 다음과 같다.
   <table> 
-    <row>
+    <tr>
       <th>백엔드</th>
       <td>
   - 디렉토리 구조 및 파일 생성 규칙 지정<br>
-  &nbsp;+ 구현 기능별로 구분된 REST API와 페이지 라우팅 Controller, Service와 Model등 각 소스파일의 명명 규칙과 그에 맞는 디렉토리 구조 생성.<br>
+  &nbsp;• 구현 기능별로 구분된 REST API와 페이지 라우팅 Controller, Service와 Model등 각 소스파일의 명명 규칙과 그에 맞는 디렉토리 구조 생성.<br>
   - git 브렌치 생성, 커밋, 병합 관리 규칙, gitignore 설정<br>
-  &nbsp;+ codeowner기능을 활용하여 코드 리뷰 없는 병합을 방지하는 등의 버전 관리상의 사고 방지와 보안성, 로그성 파일의 업로드 방지가 주 목적.<br>
+  &nbsp;• codeowner기능을 활용하여 코드 리뷰 없는 병합을 방지하는 등의 버전 관리상의 사고 방지와 보안성, 로그성 파일의 업로드 방지가 주 목적.<br>
   - Spring Boot 프레임워크 설치 및 필요 종속성 설치 <br>
-  &nbsp;+ mybatis+mariadb의 구성과, Mapper, DO, DAO 의 생성 규칙 정의 <br>
-  &nbsp;+ hibernate validator를 통한 validation 구성, Controller및 Service에서의 Validation 규칙 정의<br>
-  &nbsp;+ 각 기능 파트별 루트 라우팅 설정과 Spring Security 기초 보안 설정(테스트용 host 설정, 특정 경로 외 리소스 접근 제한). 보안 인증은 개발 주기에 구현.<br>
+  &nbsp;• mybatis+mariadb의 구성과, Mapper, DO, DAO 의 생성 규칙 정의 <br>
+  &nbsp;• hibernate validator를 통한 validation 구성, Controller및 Service에서의 Validation 규칙 정의<br>
+  &nbsp;• 각 기능 파트별 루트 라우팅 설정과 Spring Security 기초 보안 설정(테스트용 host 설정, 특정 경로 외 리소스 접근 제한). 보안 인증은 개발 주기에 구현.<br>
       </td>
-    </row>
-    <row>
+    </tr>
+    <tr>
       <th>프론트엔드</th>
-      <td></td>
-    </row>
+      <td>
+        - 프로젝트 종속성 라이브러리 설치 및 구성파일 작성<br>
+        &nbsp;• React + Redux Toolkit + RTK Query 데이터 패치/캐싱 및 상태관리 라이브러리 종속성을 추가하고 구성파일을 작성.<a href="./#4.1.1.-Redux-Toolkit-+-RTK-Query">[1]</a><br>
+        &nbsp;• Prettier + ESLint + typescript 종속성을 추가하고 구성파일을 작성<br>
+        &nbsp;• MUI 컴포넌트 라이브러리와 sass, axios 등 기타 라이브러리 종속성을 추가.<br>
+        - 프론트엔드 개발에 사용될 JS의 문법과 코딩 스타일을 제한<br>
+        &nbsp;• Prettier + ESLint 종속성을 추가하고 구성파일을 작성<br>
+        &nbsp;• 팀에서 사용하는 문법과 코딩스타일을 제한함으로서 코드 리뷰와 형상관리를 용이하게함(diff에 불필요한 부분이 제외됨).<br>
+        &nbsp;• Typescript를 종속성에 추가하고 구성하여, Typescript에 대한 VSC 더욱 강력한 intellisense기능을 활용하여 개발의 효율성을 추구함.<a href="./#4.0.2.-Typescript">[2]</a><br>
+      </td>
+    </tr>
   </table>
 
-- 팀원들은
+
+## 4. 아쉬운점
+### 4.1 프로젝트 완성도
+#### 4.1.1. Redux Toolkit + RTK Query
+Redux Toolkit + RTK Query 사용 환경을 구성해서 팀원 들에게 배포했으나 팀원들이 활용을 아예 못한 점이 아쉽다. 팀원들이 공부를 병행했지만 활용까지는 실패하고 자신들의 컴포넌트 내에서 axios로 처리했다고 한다. 결과적으로 팀장인 나 혼자 Redux Toolkit+RTK Query를 통해 상태관리와 데이터 패칭을 구현했기 때문에 내가 개발한 기능 내에서만 활용되는 등의 활용성이 제한되었다. 그래도 내가 개발한 기능에 대해서는 개발 효율성이 올라갔으니 프로젝트 단위로 봐도 없는 것보다는 효과적이었다고 할 수 있다. 
+#### 4.1.2. Typescript
+Typescript도 1번과 마찬가지 이유로 나혼자 사용하였으나 프로젝트 단위로보면 꽤나 큰 비율을 차지하는데 이는 내가 작성한 코드가 절반 이상이기 때문이다.
    
 
 
