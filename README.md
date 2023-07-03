@@ -111,23 +111,23 @@
       <th>프론트엔드</th>
       <td>
         - 프로젝트 종속성 라이브러리 설치 및 구성파일 작성<br>
-        &nbsp;• React + Redux Toolkit + RTK Query 데이터 패치/캐싱 및 상태관리 라이브러리 종속성을 추가하고 구성파일을 작성.<a href="#411-Redux-Toolkit--RTK-Query">[1]</a><br>
+        &nbsp;• React + Redux Toolkit + RTK Query 데이터 패치/캐싱 및 상태관리 라이브러리 종속성을 추가하고 구성파일을 작성.<a href="#311-Redux-Toolkit--RTK-Query">[1]</a><br>
         &nbsp;• Prettier + ESLint + typescript 종속성을 추가하고 구성파일을 작성<br>
         &nbsp;• MUI 컴포넌트 라이브러리와 sass, axios 등 기타 라이브러리 종속성을 추가.<br>
         - 프론트엔드 개발에 사용될 JS의 문법과 코딩 스타일을 제한<br>
         &nbsp;• Prettier + ESLint 종속성을 추가하고 구성파일을 작성<br>
         &nbsp;• 팀에서 사용하는 문법과 코딩스타일을 제한함으로서 코드 리뷰와 형상관리를 용이하게함(diff에 불필요한 부분이 제외됨).<br>
-        &nbsp;• Typescript를 종속성에 추가하고 구성하여, Typescript에 대한 VSC 더욱 강력한 intellisense기능을 활용하여 개발의 효율성을 추구함.<a href="#412-Typescript">[2]</a><br>
+        &nbsp;• Typescript를 종속성에 추가하고 구성하여, Typescript에 대한 VSC 더욱 강력한 intellisense기능을 활용하여 개발의 효율성을 추구함.<a href="#312-Typescript">[2]</a><br>
       </td>
     </tr>
   </table>
 
 
-## 4. 아쉬운점
-### 4.1 프로젝트 완성도
-#### 4.1.1. Redux Toolkit + RTK Query
+## 3. 아쉬운점
+### 3.1 프로젝트 완성도
+#### 3.1.1. Redux Toolkit + RTK Query
 Redux Toolkit + RTK Query 사용 환경을 구성해서 팀원 들에게 배포했으나 팀원들이 활용을 아예 못한 점이 아쉽다. 팀원들이 공부를 병행했지만 활용까지는 실패하고 자신들의 컴포넌트 내에서 axios로 처리했다고 한다. 결과적으로 팀장인 나 혼자 Redux Toolkit+RTK Query를 통해 상태관리와 데이터 패칭을 구현했기 때문에 내가 개발한 기능 내에서만 활용되는 등의 활용성이 제한되었다. 그래도 내가 개발한 기능에 대해서는 개발 효율성이 올라갔으니 프로젝트 단위로 봐도 없는 것보다는 효과적이었다고 할 수 있다. 
-#### 4.1.2. Typescript
+#### 3.1.2. Typescript
 Typescript도 Redux Toolkit처럼 사용 환경을 구성해서 팀원들에게 배포했으나 팀원들이 학습하고 적용하는데까지는 역량이 부족하여 실패하고 결국 나혼자 사용함. 그래도 나 혼자임에도 불구하고 타입스크립트가 전체 프론트엔드 소스에서 꽤나 큰 비율을 차지하는데 이는 프론트엔드에서 내가 작성한 코드가 절반 이상을 차지하기 때문이다. 그러므로 프로젝트의 프론트엔드 개발에 있어서 꽤나 큰 효과를 봤지만, 팀원들 파트까지 타입스크립트로 구성 못한 것은 아쉽다.
 
 
