@@ -111,13 +111,13 @@
       <th>프론트엔드</th>
       <td>
         - 프로젝트 종속성 라이브러리 설치 및 구성파일 작성<br>
-        &nbsp;• React + Redux Toolkit + RTK Query 데이터 패치/캐싱 및 상태관리 라이브러리 종속성을 추가하고 구성파일을 작성.<a href="./#4.1.1.-Redux-Toolkit-+-RTK-Query">[1]</a><br>
+        &nbsp;• React + Redux Toolkit + RTK Query 데이터 패치/캐싱 및 상태관리 라이브러리 종속성을 추가하고 구성파일을 작성.<a href="#411-Redux-Toolkit--RTK-Query">[1]</a><br>
         &nbsp;• Prettier + ESLint + typescript 종속성을 추가하고 구성파일을 작성<br>
         &nbsp;• MUI 컴포넌트 라이브러리와 sass, axios 등 기타 라이브러리 종속성을 추가.<br>
         - 프론트엔드 개발에 사용될 JS의 문법과 코딩 스타일을 제한<br>
         &nbsp;• Prettier + ESLint 종속성을 추가하고 구성파일을 작성<br>
         &nbsp;• 팀에서 사용하는 문법과 코딩스타일을 제한함으로서 코드 리뷰와 형상관리를 용이하게함(diff에 불필요한 부분이 제외됨).<br>
-        &nbsp;• Typescript를 종속성에 추가하고 구성하여, Typescript에 대한 VSC 더욱 강력한 intellisense기능을 활용하여 개발의 효율성을 추구함.<a href="./#4.0.2.-Typescript">[2]</a><br>
+        &nbsp;• Typescript를 종속성에 추가하고 구성하여, Typescript에 대한 VSC 더욱 강력한 intellisense기능을 활용하여 개발의 효율성을 추구함.<a href="#402-Typescript">[2]</a><br>
       </td>
     </tr>
   </table>
