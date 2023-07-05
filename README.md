@@ -1,3 +1,7 @@
+
+![Screenshot 2023-07-05 at 6 04 45 PM](https://github.com/rkdgusrn1212/laboratory_information_system-portfolio/assets/18836863/a949d3fb-ee2d-49c4-868c-a3cd7cc10e32)
+
+
 # 강호신 LIS 프로젝트와 나의 역할 소개
 
 ## 1. 프로젝트 개요
